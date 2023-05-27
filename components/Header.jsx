@@ -89,7 +89,7 @@ export default function Header() {
                 {
                   chainId: '0x3e5',
                   chainName: '5ireChain',
-                  rpcUrls: ['https://rpc-testnet.5ire.network/'],
+                  rpcUrls: ['https://rpc-testnet.5ire.network'],
                   blockExplorerUrls: [
                     'https://explorer.5ire.network/',
                   ],
