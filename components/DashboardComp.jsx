@@ -18,7 +18,7 @@ export default function DashboardComp({ tokenAddress }) {
   const [isChangeMinter, setIsChangeMinter] = useState(false)
 
   let explorerLink =
-    'https://explorer.liberty20.shardeum.org/token/' + tokenAddress
+    'https://explorer.5ire.network/' + tokenAddress
 
   const ERC20TokenContract = new web3.eth.Contract(ERC20ABI, contractAddress)
 
