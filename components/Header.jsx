@@ -76,7 +76,7 @@ export default function Header() {
         // check if the chain to connect to is installed
         await window.ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x1f90' }], // chainId must be in hexadecimal numbers
+          params: [{ chainId: '0x3e5' }], // chainId must be in hexadecimal numbers
         })
       } catch (error) {
         // This error code indicates that the chain has not been added to MetaMask
@@ -87,14 +87,14 @@ export default function Header() {
               method: 'wallet_addEthereumChain',
               params: [
                 {
-                  chainId: '0x1f90',
-                  chainName: 'Shardeum Liberty',
-                  rpcUrls: ['https://liberty20.shardeum.org'],
+                  chainId: '0x3e5',
+                  chainName: '5ireChain',
+                  rpcUrls: ['https://rpc-testnet.5ire.network/'],
                   blockExplorerUrls: [
-                    'https://explorer.liberty20.shardeum.org/',
+                    'https://explorer.5ire.network/',
                   ],
                   nativeCurrency: {
-                    symbol: 'SHM',
+                    symbol: '5ire',
                     decimals: 18,
                   },
                 },
